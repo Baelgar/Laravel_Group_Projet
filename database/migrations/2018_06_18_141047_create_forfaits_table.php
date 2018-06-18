@@ -16,6 +16,8 @@ class CreateForfaitsTable extends Migration
         Schema::create('forfaits', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
+            $table->string('name');
+            $table->integer('prix');
         });
     }
 

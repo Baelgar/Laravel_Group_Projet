@@ -15,7 +15,22 @@ class CreateSallesTable extends Migration
     {
         Schema::create('salles', function (Blueprint $table) {
             $table->increments('id');
+            //Pour appeler une clé étrangère
+            //id User
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+            //Id forfait
+            $table->integer('forfait_id')->unsigned();
+            $table->foreign('forfait_id')->references('id')->on('forfaits');
+            //Id module
+            $table->integer('module_id')->unsigned();
+            $table->foreign('module_id')->references('id')->on('modules');
             $table->timestamps();
+            $table->string('name');
+            $table->string('city');
+            $table->string('address');
+            $table->string('postalCode');
+            $table->integer('nombrePlace');
         });
     }
 
