@@ -19,7 +19,7 @@ services:
       container_name: mysql
       environment:
           MYSQL_ROOT_PASSWORD: passroot
-          MYSQL_DATABASE: lapaniere
+          MYSQL_DATABASE: reservation_salles
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
