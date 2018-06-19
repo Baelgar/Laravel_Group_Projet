@@ -1,5 +1,5 @@
-<footer class="mastfoot mt-auto">
-    <div class="inner">
+<footer class="footer">
+    <div class="container">
         <p>Developed <a href="#">Loc'all</a>, by <a href="#">It-team</a>.</p>
     </div>
 </footer>
