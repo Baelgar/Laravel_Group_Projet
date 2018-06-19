@@ -3,7 +3,7 @@
 
         <header class="masthead mb-auto">
             {{--<div class="inner">--}}
-            @include('layout.menu')
+            @include('layouts.menu')
             {{--</div>--}}
         </header>
 

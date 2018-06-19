@@ -12,15 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('layout/search');
+    return view('layouts/search');
 });
 
-Route::get('/account', function () {
-    return view('layout/account');
-});
+//Route::get('/account', function () {
+//    return view('layouts/account');
+//});
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-//Route::get('/user', 'HomeController@index')->name('account');
+//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/account', 'UserController@index');
 
 
