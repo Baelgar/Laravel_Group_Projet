@@ -5,6 +5,7 @@
 
     <form class="form-signin" action="{{url('/search/post')}}" method="post">
         {{ csrf_field() }}
+      <div class="jumbotron">
         <div class="text-center mb-4">
             <h1 class="h3 mb-3 font-weight-normal">Une salle à louer d'urgence</h1>
             <p>Recherchez la salle de vos rêves, avec Loc'all !</p>
@@ -15,6 +16,7 @@
                 <label for="inputEmail">My</label>
             </div>
         </div>
+      </div>
 
         <divv class="row text-center">
             <div class="col-lg-4 col-sm-4">
