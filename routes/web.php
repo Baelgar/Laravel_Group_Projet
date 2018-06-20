@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('layouts/search');
 });
 
-//Route::get('/account', function () {
-//    return view('layouts/account');
-//});
+
 Auth::routes();
 
 Route::get('/', 'HomeController@index');
@@ -25,6 +23,9 @@ Route::get('/', 'HomeController@index');
 Route::get('/account', 'UserController@index');
 
 Route::post('/search/post', 'SearchController@getDataLocation');
+Route::get('/admin','AdminController@index')->middleware(['auth','admin']);
+Route::get('/user/{user}/delete', 'AdminController@delete')->middleware(['auth','admin']);
+Route::get('/user/{user}/toggleactive', 'AdminController@toggleActive')->middleware(['auth','admin']);
 
 Route::get('/salle/{salle}/view', 'SalleController@index');
 
