@@ -18,11 +18,14 @@
             <li class="nav-item">
                 <a class="nav-link" href="/AdministrationSalle">Salle</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/AdministrationForfait">Forfait</a>
+            </li>
+            <li cl
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item" href="{{ url('account') }}">Account</a>
-                    <a class="dropdown-item" href="#">Another action</a>
                     <a class="dropdown-item" href="#">Something else here</a>
                 </div>
             </li>

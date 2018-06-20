@@ -24,9 +24,12 @@ Route::get('/account', 'UserController@index');
 Route::get('/admin','AdminController@index')->middleware(['auth','admin']);
 Route::get('/user/{user}/delete', 'AdminController@delete')->middleware(['auth','admin']);
 Route::get('/user/{user}/toggleactive', 'AdminController@toggleActive')->middleware(['auth','admin']);
-Route::get('/AdministrationSalle', 'SalleController@liste')->middleware(['auth','admin']);
 
+Route::get('/AdministrationSalle', 'SalleController@liste')->middleware(['auth','admin']);
 Route::get('/Salle/{salle}/update', 'SalleController@toggleActive')->middleware(['auth','admin']);
 Route::get('/Salle/{salle}/delete', 'SalleController@delete')->middleware(['auth','admin']);
-
 Route::post('/CreateSalle', 'SalleController@create')->middleware(['auth','admin']);
+
+Route::get('/AdministrationForfait', 'ForfaitController@index')->middleware(['auth','admin']);
+Route::post('/CreateForfait', 'ForfaitController@create')->middleware(['auth','admin']);
+Route::get('/Forfait/{forfait}/delete', 'ForfaitController@delete')->middleware(['auth','admin']);
