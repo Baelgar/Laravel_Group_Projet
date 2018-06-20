@@ -11,7 +11,7 @@
           <th>Email</th>
           <th>Admin</th>
           <th>Supprimer</th>
-          <th>Supprimer</th>
+          <th>Droit</th>
       </tr>
       </thead>
       @foreach ($users as $user)
@@ -25,7 +25,7 @@
               <td>Non</td>
             @endif
             <td><a href="{{url('user' . "/" . $user->id ."/delete")}}" class="button btn btn-light">Supprimer</a></td>
-            <td><a href="{{url('user' . "/" . $user->id ."/toggleactive")}}" class="button btn btn-light">droit</a></td></tr>
+            <td><a href="{{url('user' . "/" . $user->id ."/toggleactive")}}" class="button btn btn-light">Changer</a></td></tr>
           </tbody>
       @endforeach
   </table>
