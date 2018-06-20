@@ -14,7 +14,10 @@ class UpdateSallesTable extends Migration
     public function up()
     {
         Schema::table('salles', function (Blueprint $table) {
-            $table->integer('Prix');
+            $table->integer('prix');
+            $table->dropForeign('salles_modules_id_foreign');
+            $table->dropColumn('module_id');
+
         });
     }
 
@@ -26,7 +29,7 @@ class UpdateSallesTable extends Migration
     public function down()
     {
         Schema::table('salles', function (Blueprint $table) {
-            $table->dropColumn('Prix');
+            $table->dropColumn('prix');
         });
     }
 }
