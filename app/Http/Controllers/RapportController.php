@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\User as User;
 use App\Reservation as Reservation;
+use PDF;
 
 class RapportController extends Controller
 {
@@ -33,6 +34,7 @@ class RapportController extends Controller
 
         return view('rapports.rapport',['user'=>$user,'listeReservations'=>$listeReservation]);
     }
+
 
     public function generatePDF(Request $requete, User $user){
 
