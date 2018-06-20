@@ -22,5 +22,7 @@ Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/account', 'UserController@index');
-
+Route::post('/{user}/updateInfos','UserController@updateInfos');
+Route::get('/reservations/rapports','RapportController@index');
+Route::get('/{user}/generatePDF','RapportController@generatePDF');
 
