@@ -79,7 +79,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                    <button type="submit" class="btn btn-primary">CréSer la salle </button>
+                    <button type="submit" class="btn btn-primary">Créer la salle </button>
                 </div>
             </div>
         </div>
