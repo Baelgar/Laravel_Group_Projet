@@ -3,29 +3,33 @@
 
 @section('content')
 
-    <form class="form-signin">
+    <form class="form-signin" action="{{url('/search/post')}}" method="post">
+        {{ csrf_field() }}
         <div class="text-center mb-4">
             <h1 class="h3 mb-3 font-weight-normal">Une salle à louer d'urgence</h1>
             <p>Recherchez la salle de vos rêves, avec Loc'all !</p>
         </div>
-
-        <div class="form-label-group">
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-            <label for="inputEmail">My</label>
+        <div class="row text-center">
+            <div class="form-label-group col-lg-offset-6 col-sm-offset-6 col-sm-6 col-lg-6">
+                <input type="text" id="inputEmail" name="emplacement" class="form-control" placeholder="Où cherchez vous une salle ?" required autofocus>
+                <label for="inputEmail">My</label>
+            </div>
         </div>
 
-        <div class="form-label-group">
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            <label for="inputPassword">Password</label>
+        <divv class="row text-center">
+            <div class="col-lg-4 col-sm-4">
+                <input type="date" name="fromDate" >
+            </div>
+            <div class="col-lg-4 col-sm-4">
+                <input type="date" name="toDate">
+            </div>
+        </divv>
+        <div class="container-fluid row text-center">
+            <div class="col-sm-1">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </div>
         </div>
 
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
     </form>
 
 
