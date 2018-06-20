@@ -5,6 +5,7 @@ use App\Forfait;
 Use App\Salle;
 use Illuminate\Http\Request;
 use  auth;
+use Illuminate\Support\Facades\Input;
 
 class SalleController extends Controller
 {
@@ -38,11 +39,19 @@ class SalleController extends Controller
         return view('salle.index' ,['sale' =>$salle, 'forfaits' => $forfaits]);
     }
 
-    public  function  create ()
+    public  function  create (Request $request)
     {
-        $salle = Salle::all();
-        $user = Auth::user() ;
-        $salle->user_id = $user->id;
+
+        $user =Auth::user();
+        dd($request->all());
+        $salle =  new Salle;
+        $salle->user_id =$user->id;
+        $salle->name =$request['inputname'];
+        $salle->city =$request['inputville'];
+        $salle->address =$request['inputville'];
+        $salle->postalCode =$request['inputCP'];
+        $salle->NombrePlace = $request['inputville'];
+        $salle->prix = $request['inputville'];
         $forfaits =  Forfait::all();
 
 

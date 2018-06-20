@@ -53,27 +53,35 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="inputname" class="col-form-label">Nom:</label>
-                        <input type="text" class="form-control" id="inputname" placeholder="Salle marmourd">
-
+                        <input type="text" class="form-control" id="inputname" name ="inputname" placeholder="Salle marmourd">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress" class="col-form-label">Address:</label>
+                        <input type="text" class="form-control" id="inputAddress"  name="inputAddress" placeholder="12 rue  jean piere  jaques">
                     </div>
                     <div class="form-group">
                         <label for="inputville" class="col-form-label">Ville:</label>
-                        <input type="text" class="form-control" id="inputville" placeholder="Villeurbanne">
+                        <input type="text" class="form-control" id="inputville"  name="inputville" placeholder="Villeurbanne">
                     </div>
                     <div class="form-group">
                         <label for="inputCP" class="col-form-label">Code Postale:</label>
-                        <input type="text" name="email" class="form-control" id="inputCP" placeholder="97139">
+                        <input type="text"  class="form-control" id="inputCP" name="inputCP" placeholder="97139">
 
                     </div>
 
                     <div class="form-group">
                         <label for="inputForfait">Forfait:</label>
-                        <select id="inputForfait" class="form-control">
-                            <option selected>Choose...</option>
+                        <select id="inputForfait"  name="inputForfait"class="form-control">
+                            <option selected>Choississez...</option>
                             @foreach($forfaits  as $forfait)
-                                <option>{{$forfait->name}}</option>
+                                <option value="{{$forfait->id}}">{{$forfait->name}}</option>
                             @endforeach
                         </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputprix" class="col-form-label">prix:</label>
+                        <input type="number" class="form-control" id="inputCP" name="inputprix" placeholder="1200">
+
                     </div>
 
                 </div>
@@ -85,3 +93,4 @@
         </div>
     </div>
 </form>
+
