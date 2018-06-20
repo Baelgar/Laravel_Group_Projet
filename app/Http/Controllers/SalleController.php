@@ -31,33 +31,28 @@ class SalleController extends Controller
 
     public  function liste()
     {
-        $salle = Salle::all();
+        $salles = Salle::all();
 
         $forfaits =  Forfait::all();
 
-
-        return view('salle.index' ,['sale' =>$salle, 'forfaits' => $forfaits]);
+        return view('salle.index' ,['salles' =>$salles, 'forfaits' => $forfaits]);
     }
 
     public  function  create (Request $request)
     {
-
         $user =Auth::user();
-        dd($request->all());
+        //dd($request->all());
         $salle =  new Salle;
         $salle->user_id =$user->id;
         $salle->name =$request['inputname'];
         $salle->city =$request['inputville'];
-        $salle->address =$request['inputville'];
+        $salle->address =$request['inputAddress'];
         $salle->postalCode =$request['inputCP'];
-        $salle->NombrePlace = $request['inputville'];
-        $salle->prix = $request['inputville'];
-        $forfaits =  Forfait::all();
-
-
-        return view('salle.index' ,['sale' =>$salle, 'forfaits' => $forfaits]);
-
-
+        $salle->prix = $request['inputprix'];
+        $salle->forfait_id = $request['inputForfait'];
+        $salle->nombrePlace = $request['inputPlace'];
+        $salle->save();
+        return redirect()->back();
     }
 
 

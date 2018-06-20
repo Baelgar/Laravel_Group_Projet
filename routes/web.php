@@ -26,7 +26,6 @@ Route::get('/user/{user}/delete', 'AdminController@delete')->middleware(['auth',
 Route::get('/user/{user}/toggleactive', 'AdminController@toggleActive')->middleware(['auth','admin']);
 Route::get('/AdministrationSalle', 'SalleController@liste')->middleware(['auth','admin']);
 
-
 Route::get('/Salle/{salle}/update', 'SalleController@toggleActive')->middleware(['auth','admin']);
 Route::get('/Salle/{salle}/delete', 'SalleController@delete')->middleware(['auth','admin']);
 

@@ -24,7 +24,7 @@
             <th>Modifier</th>
         </tr>
         </thead>
-        @foreach ($forfaits as $salle)
+        @foreach ($salles as $salle)
             <tbody>
             <tr>
                 <td>{{ $salle->name }}</td>
@@ -80,7 +80,12 @@
                     </div>
                     <div class="form-group">
                         <label for="inputprix" class="col-form-label">prix:</label>
-                        <input type="number" class="form-control" id="inputCP" name="inputprix" placeholder="1200">
+                        <input type="number" class="form-control" id="inputprix" name="inputprix" placeholder="1200">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPlace" class="col-form-label">Nombre de place:</label>
+                        <input type="number" class="form-control" id="inputCP" name="inputPlace" placeholder="120">
 
                     </div>
 
@@ -93,4 +98,3 @@
         </div>
     </div>
 </form>
-
