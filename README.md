@@ -18,8 +18,8 @@ Pour la Base de Données notre choix est : MySql
 - Pascal prépare la base de données et le reporting.
 ### Présentation de la Base de données :
 ![Schema Bdd](https://github.com/Baelgar/Laravel_Group_Projet/blob/master/doc/SchemaBdd.png)
-
-### Rapport d’activité  **Wilfried** :
+## Rapports d’activités :
+### Rapport d’activité de __**Wilfried**__ :
 #### Première journée :
 __matin :__   Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
 __Après-midi :__ Poursuite des téléchargements, Design du layout  
@@ -32,7 +32,7 @@ __Après-midi :__   Amélioration de l'interface
 #### Dernière demi-journée :
 Debug et vérification de la partie frontend  
 
-### Rapport d’activité  **Kevin** :
+### Rapport d’activité de __**Kevin**__ :
 #### Première journée :
 __matin :__  Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
 __Après-midi :__ Poursuite des téléchargements,  Création du schéma de la base de données,  
@@ -45,7 +45,7 @@ __Après-midi :__ Génération pdf des factures.
 #### Dernière demi-journée :
 Debug de la génération pdf et autre.  
 
-### Rapport d’activité  **Gregory** :
+### Rapport d’activité de __**Gregory**__ :
 #### Première journée :
 __matin :__   Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
 __Après-midi :__ Poursuite des téléchargements,  Mise en place des outils de développements Docker, ecriture des fichiers de config...    
@@ -58,7 +58,7 @@ __Après-midi :__ Integration des différentes pages et vérification du bon fon
 #### Dernière demi-journée :
 Debug et verification du bon fonctionnement de l'application  
 
-### Rapport d’activité **Pascal** :
+### Rapport d’activité de __**Pascal**__ :
 #### Première journée :
 __matin :__  Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
 __Après-midi :__
