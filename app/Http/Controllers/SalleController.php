@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Forfait;
-Use App\Salle;
+use App\Salle;
 use Illuminate\Http\Request;
 use  auth;
 use Illuminate\Support\Facades\Input;

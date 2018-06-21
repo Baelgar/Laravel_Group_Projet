@@ -21,7 +21,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/AdministrationForfait">Forfait</a>
             </li>
-            <li cl
+            <li class="nav-item">
+                <a class="nav-link" href="/AdministrationModule">Module</a>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
