@@ -19,7 +19,44 @@ Pour la Base de Données notre choix est : MySql
 ### Présentation de la Base de données :
 ![Schema Bdd](https://github.com/Baelgar/Laravel_Group_Projet/blob/master/doc/SchemaBdd.png)
 
-### Rapport d’activité Pascal :
+### Rapport d’activité  **Wilfried** :
+#### Première journée :
+__matin :__  
+__Après-midi :__
+#### Deuxième journée :
+__Matin :__  
+__Après-midi :__
+#### Troisième journée :
+__Matin :__
+__Après-midi :__
+#### Dernière demi-journée :
+
+### Rapport d’activité  **Kevin** :
+#### Première journée :
+__matin :__  
+__Après-midi :__
+#### Deuxième journée :
+__Matin :__  
+__Après-midi :__
+#### Troisième journée :
+__Matin :__
+__Après-midi :__
+#### Dernière demi-journée :
+
+### Rapport d’activité  **Gregory** :
+#### Première journée :
+__matin :__  
+__Après-midi :__
+#### Deuxième journée :
+__Matin :__  
+__Après-midi :__
+#### Troisième journée :
+__Matin :__
+__Après-midi :__
+#### Dernière demi-journée :
+
+
+### Rapport d’activité **Pascal** :
 #### Première journée :
 __matin :__  Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
 __Après-midi :__
