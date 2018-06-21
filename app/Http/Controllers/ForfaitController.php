@@ -34,12 +34,22 @@ class ForfaitController extends Controller
       return redirect()->back();
   }
 
-  public  function update( Request $request, Forfait $forfait)
-  {
+    public  function  update( Request $request, Forfait $forfait)
+    {
+        return view('forfait.edit' ,['forfait' => $forfait]);
+    }
+
+    public  function  updateAction ( Request $request, Forfait $forfait)
+    {
 
 
-      return view('forfait.index' ,['forfaits' => $forfaits]);
+        $list = Forfait::findOrFail($request['inputid']);
 
-  }
+        $list->name =$request['inputname'];
+        $list->prix = $request['inputprix'];
+        $list->save();
+        return redirect('/AdministrationForfait');
+    }
+
 
 }
