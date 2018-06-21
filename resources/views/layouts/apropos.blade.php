@@ -6,8 +6,8 @@
         <div class="jumbotron jumbotron-fluid text-center">
             <h1 >A propos de Loc'all</h1>
             <p>Site de location de salles</p>
-            <h3>Adresse</h3>
-            <p>Version 0.0.1</p>
+            <h3>Version</h3>
+            <p>0.0.1</p>
         </div>
     </div>
 @endsection
