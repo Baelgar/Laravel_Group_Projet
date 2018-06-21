@@ -51,7 +51,8 @@ __matin :__   Etude du cahier des charges, téléchargement des IDE, Outils de d
 __Après-midi :__ Poursuite des téléchargements,  Mise en place des outils de développements Docker, ecriture des fichiers de config...    
 #### Deuxième journée :
 __Matin :__  Mise en place des Middleware  
-__Après-midi :__ Mise en place de la gestion de l'admin  
+__Après-midi :__ Mise en place de la gestion de l'admin
+Géneration  de  fausse  données via  le seeder (2 utilisateurs , 4 forfaits et4 modules)  
 #### Troisième journée :
 __Matin :__ Intégration de la partie authentification  
 __Après-midi :__ Integration des différentes pages et vérification du bon fonctionnement  
