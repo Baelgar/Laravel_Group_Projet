@@ -17,12 +17,13 @@ Pour la Base de Données notre choix est : MySql
 - Kevin prépare le module d’authentification.
 - Pascal prépare la base de données.
 ### Présentation de la Base de données :
-![Schema Bdd](https://github.com/Baelgar/Laravel_Group_Projet/doc/SchemaBdd.png)
+![Schema Bdd](http://github.com/Baelgar/Laravel_Group_Projet/doc/SchemaBdd.png)
 
 ### Rapport d’activité Pascal :
 #### Première journée :
 __matin :__ Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…
-__Après-midi :__ Poursuite des téléchargements,
+__Après-midi :__
+Poursuite des téléchargements,
 Création du schéma de la base de données,
 Recherche d’information sur les lib d’impression de pdf
 
