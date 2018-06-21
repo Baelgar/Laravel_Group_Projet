@@ -7,13 +7,13 @@
 <div class="container-fluid">
     <div class="row justify-content-end " style="padding-bottom: 10px">
         <div class="col-4">
-            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">Ajouter une salle
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Ajouter une salle
             </button>
         </div>
     </div>
 
     <div class="panel panel-default">
-        <table class="table table-hover">
+        <table class="table">
             <thead>
             <tr>
                 <th>Salle</th>

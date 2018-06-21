@@ -10,7 +10,7 @@
             <h3>Adresse</h3>
             <p>{{$salle->address}}</p>
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                <a href="{{url('salle' . "/" . $salle->id ."/reservation")}}"class="btn btn-success">Réserver !</a>
             </p>
         </div>
     </div>
