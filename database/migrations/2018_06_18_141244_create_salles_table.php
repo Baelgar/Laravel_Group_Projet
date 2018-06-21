@@ -23,8 +23,7 @@ class CreateSallesTable extends Migration
             $table->integer('forfait_id')->unsigned();
             $table->foreign('forfait_id')->references('id')->on('forfaits');
             //Id module
-            $table->integer('module_id')->unsigned();
-            $table->foreign('module_id')->references('id')->on('modules');
+        
             $table->timestamps();
             $table->string('name');
             $table->string('city');
