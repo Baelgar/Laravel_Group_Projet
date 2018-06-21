@@ -53,4 +53,29 @@ class SalleController extends Controller
         $list->delete();
         return redirect()->back();
     }
+    public  function  update( Request $request, Salle $salle)
+    {
+        $forfaits =  Forfait::all();
+        return view('salle.edit' ,['salle' => $salle, 'forfaits' => $forfaits]);
+    }
+
+    public  function  updateAction ( Request $request, Salle $salle)
+    {
+
+
+        $list = Salle::findOrFail($request['inputid']);
+
+        $list->name =$request['inputname'];
+        $list->city =$request['inputville'];
+        $list->address =$request['inputAddress'];
+        $list->postalCode =$request['inputCP'];
+        $list->prix = $request['inputprix'];
+        $list->forfait_id = $request['inputForfait'];
+        $list->nombrePlace = $request['inputPlace'];
+
+        $list->save();
+        return redirect('/AdministrationSalle');
+    }
+
+
 }
