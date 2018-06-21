@@ -33,15 +33,16 @@ __Après-midi :__
 
 ### Rapport d’activité  **Kevin** :
 #### Première journée :
-__matin :__  
-__Après-midi :__
+__matin :__  Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
+__Après-midi :__ Poursuite des téléchargements,  Création du schéma de la base de données,  
 #### Deuxième journée :
-__Matin :__  
-__Après-midi :__
+__Matin :__  Mise en place de la gestion des comptes utilisateurs  
+__Après-midi :__ deploiement de la solution d'authentification Laravel  
 #### Troisième journée :
-__Matin :__
-__Après-midi :__
+__Matin :__ Creation de la liste des réservations  
+__Après-midi :__ Génération pdf des factures.  
 #### Dernière demi-journée :
+Debug de la génération pdf et autre.  
 
 ### Rapport d’activité  **Gregory** :
 #### Première journée :
