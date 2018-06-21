@@ -4,6 +4,7 @@
 
 @section('content')
     <div class="container">
+
             {{ $salle->id }}
             {{ $salle->name }}
             {{ $salle->city }}

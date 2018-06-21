@@ -22,6 +22,9 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index');
 Route::get('/account', 'UserController@index');
+Route::post('/{user}/updateInfos','UserController@updateInfos');
+Route::get('/reservations/rapports','RapportController@index');
+Route::get('/{reservation}/generatePDF','RapportController@generatePDF');
 Route::get('/admin','AdminController@index')->middleware(['auth','admin']);
 Route::get('/user/{user}/delete', 'AdminController@delete')->middleware(['auth','admin']);
 Route::get('/user/{user}/toggleactive', 'AdminController@toggleActive')->middleware(['auth','admin']);
@@ -35,11 +38,15 @@ Route::post('/CreateSalle', 'SalleController@create')->middleware(['auth','admin
 
 Route::get('/AdministrationForfait', 'ForfaitController@index')->middleware(['auth','admin']);
 Route::post('/CreateForfait', 'ForfaitController@create')->middleware(['auth','admin']);
-Route::get('/Forfait/{forfait}/delete', 'ForfaitController@delete')->middleware(['auth','admin']);
+Route::get('/Forfait/{Forfait}/delete', 'ForfaitController@delete')->middleware(['auth','admin']);
+Route::get('/Forfait/{forfait}/update', 'ForfaitController@update')->middleware(['auth','admin']);
+Route::post('/updateForfaitAction', 'ForfaitController@updateAction')->middleware(['auth','admin']);
 
 Route::get('/AdministrationModule', 'ModuleController@index')->middleware(['auth','admin']);
 Route::post('/CreateModule', 'ModuleController@create')->middleware(['auth','admin']);
 Route::get('/Module/{module}/delete', 'ModuleController@delete')->middleware(['auth','admin']);
+Route::get('/Module/{module}/update', 'ModuleController@update')->middleware(['auth','admin']);
+Route::post('/updateModuleAction', 'ModuleController@updateAction')->middleware(['auth','admin']);
 
 /*Post*/
 Route::get('/salle/{salle}/reservation', 'ReservationController@index');
