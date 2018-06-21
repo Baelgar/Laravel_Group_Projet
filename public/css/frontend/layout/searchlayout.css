@@ -1,4 +1,11 @@
 .bouton{
   margin: 35px;
   text-align: center;
+  width: 50%;
+}
+p{
+  text-align: center;
+}
+input{
+  align-self: center;
 }

@@ -21,30 +21,30 @@
     <div class="text-center">
       <p>Sélectionnez votre période</p>
     </div>
-        <divv class="row text-center">
-          <div class="text-center  mb-4" style="text-align:center;">
+
+          <div class="form-group ">
+            <div class="text-center">
               <p> Du </p>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-              <input type="date" name="fromDate" >
-          </div>
-          <div class="text-center  mb-4">
-              <p> au </p>
-          </div>
-          <div class="col-lg-4 col-sm-4">
-              <input type="date" name="toDate">
-          </div>
-          <div class="text-center  mb-4">
-            <p>    </p>
-          </div>
-            <div class="sm-4">
-                <button class="bouton btn btn-lg btn-primary btn-block" type="submit">Valider</button>
             </div>
-          </div>
-        </divv>
-        <div class="container-fluid row text-center">
+
+              <input type="date" name="fromDate" >
+
+            <div class="text-center">
+              <p> au </p>
+            </div>
+
+              <input type="date" name="toDate">
+
+
+            <p>    </p>
+
+
+                <button class="bouton btn btn-lg btn-primary btn-block" type="submit">Valider</button>
+
 
         </div>
+
+
       </div>
     </form>
 
