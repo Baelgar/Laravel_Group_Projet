@@ -65,7 +65,7 @@ Création du schéma de la base de données,
 Recherche d’information sur les lib d’impression de pdf  
 
 #### Deuxième journée :
-__Matin :__  Installation docker, Installation vagrant, pour test projet d’impression pdf.
+__Matin :__  Installation docker, Installation vagrant, pour test projet d’impression pdf.  
 __Après-midi :__  
 Modification de la base de données (adaptation des tables à notre besoin)   
 remplissage de la base de données : users, salles, réservation...  
