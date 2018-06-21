@@ -15,21 +15,22 @@ Pour la Base de Données notre choix est : MySql
 - Wilfried prépare le front.
 - Gregory architecture le projet avec le framework Laravel.
 - Kevin prépare le module d’authentification.
-- Pascal prépare la base de données.
+- Pascal prépare la base de données et le reporting.
 ### Présentation de la Base de données :
 ![Schema Bdd](https://github.com/Baelgar/Laravel_Group_Projet/blob/master/doc/SchemaBdd.png)
 
 ### Rapport d’activité  **Wilfried** :
 #### Première journée :
-__matin :__  
-__Après-midi :__
+__matin :__   Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
+__Après-midi :__ Poursuite des téléchargements, Design du layout  
 #### Deuxième journée :
-__Matin :__  
-__Après-midi :__
+__Matin :__  Mise en place de la gestion des salles  
+__Après-midi :__ Design des pages de recherche de salles, design des pages resultat de la recherche
 #### Troisième journée :
-__Matin :__
-__Après-midi :__
+__Matin :__ Mise en place de la partie frontend  
+__Après-midi :__   Amélioration de l'interface  
 #### Dernière demi-journée :
+Debug et vérification de la partie frontend  
 
 ### Rapport d’activité  **Kevin** :
 #### Première journée :
@@ -46,16 +47,16 @@ Debug de la génération pdf et autre.
 
 ### Rapport d’activité  **Gregory** :
 #### Première journée :
-__matin :__  
-__Après-midi :__
+__matin :__   Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
+__Après-midi :__ Poursuite des téléchargements,  Mise en place des outils de développements Docker, ecriture des fichiers de config...    
 #### Deuxième journée :
-__Matin :__  
-__Après-midi :__
+__Matin :__  Mise en place des Middleware
+__Après-midi :__ Mise en place de la gestion de l'admin
 #### Troisième journée :
-__Matin :__
-__Après-midi :__
+__Matin :__ Intégration de la partie authentification
+__Après-midi :__ Integration des différentes pages et vérification du bon fonctionnement
 #### Dernière demi-journée :
-
+Debug et verification du bon fonctionnement de l'application
 
 ### Rapport d’activité **Pascal** :
 #### Première journée :
@@ -75,4 +76,4 @@ Mock des pages : search...
 __Matin :__ Cours php.  
 __Après-midi :__ Prise en main du projet Laravel, analyse de la structure du projet, pour faire des modifications sur la page search.blade.php, tentative d’ajout de css...  
 #### Dernière demi-journée :
-Ecriture du readme,  préparation de la présentation.  
+Ecriture du readme,  reporting de l'activité de chacun, préparation de la présentation.  
