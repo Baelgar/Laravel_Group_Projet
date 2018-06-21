@@ -18,12 +18,15 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
-Route::get('/account', 'UserController@index');
+/*Get*/
 
+Route::get('/', 'HomeController@index');
+Route::get('/account', 'UserController@index');
 Route::get('/admin','AdminController@index')->middleware(['auth','admin']);
 Route::get('/user/{user}/delete', 'AdminController@delete')->middleware(['auth','admin']);
 Route::get('/user/{user}/toggleactive', 'AdminController@toggleActive')->middleware(['auth','admin']);
+Route::get('/salle/{salle}/view', 'SalleController@index');
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::get('/AdministrationSalle', 'SalleController@liste')->middleware(['auth','admin']);
 Route::get('/Salle/{salle}/update', 'SalleController@toggleActive')->middleware(['auth','admin']);
@@ -37,3 +40,9 @@ Route::get('/Forfait/{forfait}/delete', 'ForfaitController@delete')->middleware(
 Route::get('/AdministrationModule', 'ModuleController@index')->middleware(['auth','admin']);
 Route::post('/CreateModule', 'ModuleController@create')->middleware(['auth','admin']);
 Route::get('/Module/{module}/delete', 'ModuleController@delete')->middleware(['auth','admin']);
+
+/*Post*/
+Route::get('/salle/{salle}/reservation', 'ReservationController@index');
+Route::post('/search/post', 'SearchController@getDataLocation');
+
+

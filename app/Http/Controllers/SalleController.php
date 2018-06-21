@@ -10,23 +10,13 @@ use Illuminate\Support\Facades\Input;
 class SalleController extends Controller
 {
     /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-    /**
      * Show the application dashboard.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request, Salle $salle)
     {
-        return view('layouts.salle');
+        return view('layouts.salle',['salle'=> $salle]);
     }
 
     public  function liste()

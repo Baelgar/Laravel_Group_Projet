@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-
+@section('title',"Loc'all")
 @section('content')
 
     <form class="form-signin" action="{{url('/search/post')}}" method="post">
