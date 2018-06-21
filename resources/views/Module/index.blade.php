@@ -3,34 +3,35 @@
 @section('title', 'gestion de Module')
 
 @section('content')
-
-<div class="row justify-content-end " style="padding-bottom: 10px">
-    <div class="col-4">
-        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">Ajouter un module
-        </button>
+<div class="container-fluid">
+    <div class="row justify-content-end " style="padding-bottom: 10px">
+        <div class="col-4">
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">Ajouter un module
+            </button>
+        </div>
     </div>
-</div>
-<div class="panel panel-default">
-    <table class="table table-hover">
-        <thead>
-        <tr>
-            <th>Module</th>
-            <th>Prix</th>
-            <th>Supprimer</th>
-            <th>Modifier</th>
-        </tr>
-        </thead>
-        @foreach ($modules as $module)
-            <tbody>
+    <div class="panel panel-default">
+        <table class="table table-hover">
+            <thead>
             <tr>
-                <td>{{ $module->name }}</td>
-                <td>{{ $module->prix }}</td>
-                <td><a href="{{url('Module' . "/" . $module->id ."/delete")}}" class="btn btn-outline-danger">Supprimer</a></td>
-                <td><a href="{{url('Module' . "/" . $module->id ."/update")}}" class="btn btn-outline-warning">Changer</a></td>
+                <th>Module</th>
+                <th>Prix</th>
+                <th>Supprimer</th>
+                <th>Modifier</th>
             </tr>
-            </tbody>
-        @endforeach
-    </table>
+            </thead>
+            @foreach ($modules as $module)
+                <tbody>
+                <tr>
+                    <td>{{ $module->name }}</td>
+                    <td>{{ $module->prix }}</td>
+                    <td><a href="{{url('Module' . "/" . $module->id ."/delete")}}" class="btn btn-outline-danger">Supprimer</a></td>
+                    <td><a href="{{url('Module' . "/" . $module->id ."/update")}}" class="btn btn-outline-warning">Changer</a></td>
+                </tr>
+                </tbody>
+            @endforeach
+        </table>
+    </div>
 </div>
 @endsection
 

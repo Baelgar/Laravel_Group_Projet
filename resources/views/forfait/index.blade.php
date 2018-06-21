@@ -3,34 +3,35 @@
 @section('title', 'gestion de forfait')
 
 @section('content')
-
-<div class="row justify-content-end " style="padding-bottom: 10px">
-    <div class="col-4">
-        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">Ajouter un forfait
-        </button>
+<div class="container-fluid">
+    <div class="row justify-content-end " style="padding-bottom: 10px">
+        <div class="col-4">
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">Ajouter un forfait
+            </button>
+        </div>
     </div>
-</div>
-<div class="panel panel-default">
-    <table class="table table-hover">
-        <thead>
-        <tr>
-            <th>Forfait</th>
-            <th>Prix</th>
-            <th>Supprimer</th>
-            <th>Modifier</th>
-        </tr>
-        </thead>
-        @foreach ($forfaits as $forfait)
-            <tbody>
+    <div class="panel panel-default">
+        <table class="table table-hover">
+            <thead>
             <tr>
-                <td>{{ $forfait->name }}</td>
-                <td>{{ $forfait->prix }}</td>
-                <td><a href="{{url('Forfait' . "/" . $forfait->id ."/delete")}}" class="btn btn-outline-danger">Supprimer</a></td>
-                <td><a href="{{url('Forfait' . "/" . $forfait->id ."/update")}}" class="btn btn-outline-warning">Changer</a></td>
+                <th>Forfait</th>
+                <th>Prix</th>
+                <th>Supprimer</th>
+                <th>Modifier</th>
             </tr>
-            </tbody>
-        @endforeach
-    </table>
+            </thead>
+            @foreach ($forfaits as $forfait)
+                <tbody>
+                <tr>
+                    <td>{{ $forfait->name }}</td>
+                    <td>{{ $forfait->prix }}</td>
+                    <td><a href="{{url('Forfait' . "/" . $forfait->id ."/delete")}}" class="btn btn-outline-danger">Supprimer</a></td>
+                    <td><a href="{{url('Forfait' . "/" . $forfait->id ."/update")}}" class="btn btn-outline-warning">Changer</a></td>
+                </tr>
+                </tbody>
+            @endforeach
+        </table>
+    </div>
 </div>
 @endsection
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Salle;
 use Illuminate\Http\Request;
 
 class ReservationController extends Controller
@@ -16,9 +17,8 @@ class ReservationController extends Controller
 //        $this->middleware('auth');
 //    }
 
-    public function index(Request $request)
+    public function index(Request $request, Salle $salle)
     {
-        $id = $request['id'];
-        return view('layouts.reservation',['id'=> $id]);
+        return view('layouts.reservation',['salle'=> $salle]);
     }
 }
