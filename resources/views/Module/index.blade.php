@@ -11,7 +11,7 @@
         </div>
     </div>
     <div class="panel panel-default">
-        <table class="table table-hover">
+        <table class="table">
             <thead>
             <tr>
                 <th>Module</th>
