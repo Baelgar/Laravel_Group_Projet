@@ -34,4 +34,12 @@ class ForfaitController extends Controller
       return redirect()->back();
   }
 
+  public  function update( Request $request, Forfait $forfait)
+  {
+
+
+      return view('forfait.index' ,['forfaits' => $forfaits]);
+
+  }
+
 }

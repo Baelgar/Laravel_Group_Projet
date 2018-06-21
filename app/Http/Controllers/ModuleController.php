@@ -30,4 +30,21 @@ class ModuleController extends Controller
       return redirect()->back();
   }
 
+    public  function  update( Request $request, Module $module)
+    {
+        return view('Module.edit' ,['module' => $module]);
+    }
+
+    public  function  updateAction ( Request $request, Module $module)
+    {
+
+
+        $list = Module::findOrFail($request['inputid']);
+
+        $list->name =$request['inputname'];
+        $list->prix = $request['inputprix'];
+        $list->save();
+        return redirect('/AdministrationModule');
+    }
+
 }

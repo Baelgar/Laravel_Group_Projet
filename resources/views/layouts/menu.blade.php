@@ -16,24 +16,16 @@
                 <a class="nav-link" href="#">A propos</a>
             </li>
             @if (Auth::user() && Auth::user()->isAdmin())
-            <li class="nav-item">
-                <a class="nav-link" href="/AdministrationSalle">Salle</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/AdministrationForfait">Forfait</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/AdministrationModule">Module</a>
-            </li>
-            @endif
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="{{ url('account') }}">Account</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administration</a>
+                <div class="dropdown-menu" aria-labelledby="Administration">
+                    <a class="dropdown-item" href="/admin">Utilisateurs</a>
+                    <a class="dropdown-item" href="/AdministrationSalle">Salle</a>
+                    <a class="dropdown-item" href="/AdministrationForfait">Forfait</a>
+                    <a class="dropdown-item" href="/AdministrationModule">Module</a>
                 </div>
             </li>
-
+            @endif
         </ul>
         @if (Route::has('login'))
             <div class="top-right links">

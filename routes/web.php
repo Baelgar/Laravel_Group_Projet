@@ -43,6 +43,8 @@ Route::get('/Forfait/{forfait}/delete', 'ForfaitController@delete')->middleware(
 Route::get('/AdministrationModule', 'ModuleController@index')->middleware(['auth','admin']);
 Route::post('/CreateModule', 'ModuleController@create')->middleware(['auth','admin']);
 Route::get('/Module/{module}/delete', 'ModuleController@delete')->middleware(['auth','admin']);
+Route::get('/Module/{module}/update', 'ModuleController@update')->middleware(['auth','admin']);
+Route::post('/updateModuleAction', 'ModuleController@updateAction')->middleware(['auth','admin']);
 
 /*Post*/
 Route::get('/salle/{salle}/reservation', 'ReservationController@index');
