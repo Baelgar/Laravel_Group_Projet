@@ -25,8 +25,8 @@
             <tr>
                 <td>{{ $forfait->name }}</td>
                 <td>{{ $forfait->prix }}</td>
-                <td><a href="{{url('Forfait' . "/" . $forfait->id ."/delete")}}" class="button btn btn-light">Supprimer</a></td>
-                <td><a href="{{url('Forfait' . "/" . $forfait->id ."/update")}}" class="button btn btn-light">Changer</a></td>
+                <td><a href="{{url('Forfait' . "/" . $forfait->id ."/delete")}}" class="btn btn-outline-danger">Supprimer</a></td>
+                <td><a href="{{url('Forfait' . "/" . $forfait->id ."/update")}}" class="btn btn-outline-warning">Changer</a></td>
             </tr>
             </tbody>
         @endforeach

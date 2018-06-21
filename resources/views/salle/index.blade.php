@@ -31,8 +31,8 @@
                 <td>{{ $salle->prix }}</td>
                 <td>{{ $salle->postalCode }}</td>
                 <td>{{ $salle->nombrePlace }}</td>
-                <td><a href="{{url('Salle' . "/" . $salle->id ."/delete")}}" class="button btn btn-light">Supprimer</a></td>
-                <td><a href="{{url('Salle' . "/" . $salle->id ."/update")}}" class="button btn btn-light">Changer</a></td>
+                <td><a href="{{url('Salle' . "/" . $salle->id ."/delete")}}" class="btn btn-outline-danger">Supprimer</a></td>
+                <td><a href="{{url('Salle' . "/" . $salle->id ."/update")}}" class="btn btn-outline-warning">Changer</a></td>
             </tr>
             </tbody>
         @endforeach
