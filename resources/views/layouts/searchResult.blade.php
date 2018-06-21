@@ -3,6 +3,7 @@
 
 
 @section('content')
+    <div class="container-fluid">
     <table class="table text-center">
         <thead>
         <tr>
@@ -29,4 +30,5 @@
             @endforeach
         </tbody>
     </table>
+    </div>
 @endsection

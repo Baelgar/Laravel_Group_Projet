@@ -4,39 +4,40 @@
 
 
 @section('content')
-
-<div class="row justify-content-end " style="padding-bottom: 10px">
-    <div class="col-4">
-        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">Ajouter une salle
-        </button>
+<div class="container-fluid">
+    <div class="row justify-content-end " style="padding-bottom: 10px">
+        <div class="col-4">
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModal">Ajouter une salle
+            </button>
+        </div>
     </div>
-</div>
 
-<div class="panel panel-default">
-    <table class="table table-hover">
-        <thead>
-        <tr>
-            <th>Salle</th>
-            <th>Prix</th>
-            <th>CP</th>
-            <th>Nombre de place</th>
-            <th>Supprimer</th>
-            <th>Modifier</th>
-        </tr>
-        </thead>
-        @foreach ($salles as $salle)
-            <tbody>
+    <div class="panel panel-default">
+        <table class="table table-hover">
+            <thead>
             <tr>
-                <td>{{ $salle->name }}</td>
-                <td>{{ $salle->prix }}</td>
-                <td>{{ $salle->postalCode }}</td>
-                <td>{{ $salle->nombrePlace }}</td>
-                <td><a href="{{url('Salle' . "/" . $salle->id ."/delete")}}" class="btn btn-outline-danger">Supprimer</a></td>
-                <td><a href="{{url('Salle' . "/" . $salle->id ."/update")}}" class="btn btn-outline-warning">Changer</a></td>
+                <th>Salle</th>
+                <th>Prix</th>
+                <th>CP</th>
+                <th>Nombre de place</th>
+                <th>Supprimer</th>
+                <th>Modifier</th>
             </tr>
-            </tbody>
-        @endforeach
-    </table>
+            </thead>
+            @foreach ($salles as $salle)
+                <tbody>
+                <tr>
+                    <td>{{ $salle->name }}</td>
+                    <td>{{ $salle->prix }}</td>
+                    <td>{{ $salle->postalCode }}</td>
+                    <td>{{ $salle->nombrePlace }}</td>
+                    <td><a href="{{url('Salle' . "/" . $salle->id ."/delete")}}" class="btn btn-outline-danger">Supprimer</a></td>
+                    <td><a href="{{url('Salle' . "/" . $salle->id ."/update")}}" class="btn btn-outline-warning">Changer</a></td>
+                </tr>
+                </tbody>
+            @endforeach
+        </table>
+    </div>
 </div>
 @endsection
 

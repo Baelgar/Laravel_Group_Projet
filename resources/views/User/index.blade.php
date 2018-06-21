@@ -3,6 +3,7 @@
 @section('title', 'Utilisateurs')
 
 @section('content')
+    <div class="container-fluid">
 <div class="panel panel-default">
   <table class="table table-hover">
       <thead>
@@ -29,5 +30,6 @@
           </tbody>
       @endforeach
   </table>
+</div>
 </div>
 @endsection

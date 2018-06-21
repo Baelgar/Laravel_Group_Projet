@@ -2,7 +2,7 @@
 
 @section('title',"Loc'all")
 @section('content')
-
+<div class="container">
     <form class="form-signin" action="{{url('/search/post')}}" method="post">
         {{ csrf_field() }}
         <div class="text-center mb-4">
@@ -25,12 +25,12 @@
             </div>
         </divv>
         <div class="container-fluid row text-center">
-            <div class="col-sm-1">
+            <div class="col-sm-4">
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
             </div>
         </div>
 
     </form>
-
+</div>
 
 @endsection
