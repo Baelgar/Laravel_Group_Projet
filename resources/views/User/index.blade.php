@@ -24,8 +24,8 @@
             @else
               <td>Non</td>
             @endif
-            <td><a href="{{url('user' . "/" . $user->id ."/delete")}}" class="button btn btn-light">Supprimer</a></td>
-            <td><a href="{{url('user' . "/" . $user->id ."/toggleactive")}}" class="button btn btn-light">Changer</a></td></tr>
+            <td><a href="{{url('user' . "/" . $user->id ."/delete")}}" class="btn btn-outline-danger">Supprimer</a></td>
+            <td><a href="{{url('user' . "/" . $user->id ."/toggleactive")}}" class="btn btn-outline-warning">Changer</a></td></tr>
           </tbody>
       @endforeach
   </table>
