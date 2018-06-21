@@ -50,13 +50,13 @@ Debug de la génération pdf et autre.
 __matin :__   Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
 __Après-midi :__ Poursuite des téléchargements,  Mise en place des outils de développements Docker, ecriture des fichiers de config...    
 #### Deuxième journée :
-__Matin :__  Mise en place des Middleware
-__Après-midi :__ Mise en place de la gestion de l'admin
+__Matin :__  Mise en place des Middleware  
+__Après-midi :__ Mise en place de la gestion de l'admin  
 #### Troisième journée :
-__Matin :__ Intégration de la partie authentification
-__Après-midi :__ Integration des différentes pages et vérification du bon fonctionnement
+__Matin :__ Intégration de la partie authentification  
+__Après-midi :__ Integration des différentes pages et vérification du bon fonctionnement  
 #### Dernière demi-journée :
-Debug et verification du bon fonctionnement de l'application
+Debug et verification du bon fonctionnement de l'application  
 
 ### Rapport d’activité **Pascal** :
 #### Première journée :
