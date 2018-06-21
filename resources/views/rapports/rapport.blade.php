@@ -14,15 +14,15 @@
     @foreach($listeReservations as $reservation)
             <tr>
                 <td style="width:30%;margin:1em;">
-                    {{$reservation->date_debut_location}}
+                    {{$reservation['date_debut']}}
                 </td>
                 <td style="width:30%;margin:1em;">
-                    {{$reservation->date_fin_location}}
+                    {{$reservation['date_fin']}}
                 </td>
                 <td style="width:30%;margin:1em;">
-                    {{$reservation->prix_total}}
+                    {{$reservation['prix']}}
                 </td>
-                <td><button><a href="{{ url('/'.$user->id.'/generatePDF') }}">Générer une facture au format PDF</a></button></td>
+                <td><button><a href="{{ url('/'.$reservation["id"].'/generatePDF') }}">Générer une facture au format PDF</a></button></td>
             </tr>
     @endforeach
         </tbody>

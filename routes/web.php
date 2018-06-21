@@ -24,5 +24,5 @@ Auth::routes();
 Route::get('/account', 'UserController@index');
 Route::post('/{user}/updateInfos','UserController@updateInfos');
 Route::get('/reservations/rapports','RapportController@index');
-Route::get('/{user}/generatePDF','RapportController@generatePDF');
+Route::get('/{reservation}/generatePDF','RapportController@generatePDF');
 
