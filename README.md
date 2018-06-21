@@ -1,58 +1,79 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# PHP Frameworks
+## Application De Location de salle
+### Participants au projet :
+- Wilfried Atride
+- Kevin Enfoux
+- Gregory Norvene
+- Pascal Rey
+### Abstract du projet :
+Création d’une application qui permettra à un client (fictif) de louer des locaux à d’autres personnes.
+### Stack Technique
+Pour le framework php notre choix est : Laravel.
+Pour le serveur notre choix est : Apache en container Docker
+Pour la Base de Données notre choix est : MySql
+### Répartition des tâches :
+- Wilfried prépare le front.
+- Gregory architecture le projet avec le framework Laravel.
+- Kevin prépare le module d’authentification.
+- Pascal prépare la base de données et le reporting.
+### Présentation de la Base de données :
+![Schema Bdd](https://github.com/Baelgar/Laravel_Group_Projet/blob/master/doc/SchemaBdd.png)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+### Rapport d’activité  **Wilfried** :
+#### Première journée :
+__matin :__   Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
+__Après-midi :__ Poursuite des téléchargements, Design du layout  
+#### Deuxième journée :
+__Matin :__  Mise en place de la gestion des salles  
+__Après-midi :__ Design des pages de recherche de salles, design des pages resultat de la recherche
+#### Troisième journée :
+__Matin :__ Mise en place de la partie frontend  
+__Après-midi :__   Amélioration de l'interface  
+#### Dernière demi-journée :
+Debug et vérification de la partie frontend  
 
-## About Laravel
+### Rapport d’activité  **Kevin** :
+#### Première journée :
+__matin :__  Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
+__Après-midi :__ Poursuite des téléchargements,  Création du schéma de la base de données,  
+#### Deuxième journée :
+__Matin :__  Mise en place de la gestion des comptes utilisateurs  
+__Après-midi :__ deploiement de la solution d'authentification Laravel  
+#### Troisième journée :
+__Matin :__ Creation de la liste des réservations  
+__Après-midi :__ Génération pdf des factures.  
+#### Dernière demi-journée :
+Debug de la génération pdf et autre.  
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+### Rapport d’activité  **Gregory** :
+#### Première journée :
+__matin :__   Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
+__Après-midi :__ Poursuite des téléchargements,  Mise en place des outils de développements Docker, ecriture des fichiers de config...    
+#### Deuxième journée :
+__Matin :__  Mise en place des Middleware  
+__Après-midi :__ Mise en place de la gestion de l'admin  
+#### Troisième journée :
+__Matin :__ Intégration de la partie authentification  
+__Après-midi :__ Integration des différentes pages et vérification du bon fonctionnement  
+#### Dernière demi-journée :
+Debug et verification du bon fonctionnement de l'application  
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Rapport d’activité **Pascal** :
+#### Première journée :
+__matin :__  Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
+__Après-midi :__
+Poursuite des téléchargements,  
+Création du schéma de la base de données,  
+Recherche d’information sur les lib d’impression de pdf  
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Pulse Storm](http://www.pulsestorm.net/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+#### Deuxième journée :
+__Matin :__  Installation docker, Installation vagrant, pour test projet d’impression pdf.  
+__Après-midi :__  
+Modification de la base de données (adaptation des tables à notre besoin)   
+remplissage de la base de données : users, salles, réservation...  
+Mock des pages : search...  
+#### Troisième journée :
+__Matin :__ Cours php.  
+__Après-midi :__ Prise en main du projet Laravel, analyse de la structure du projet, pour faire des modifications sur la page search.blade.php, tentative d’ajout de css...  
+#### Dernière demi-journée :
+Ecriture du readme,  reporting de l'activité de chacun, préparation de la présentation.  

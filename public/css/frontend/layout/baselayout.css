@@ -19,6 +19,12 @@ a:hover {
     border: .05rem solid #fff;
 }
 
+tr{
+    background-color: #FFFFFF;
+}
+tr:hover{
+    background-color: grey;
+}
 
 /*
  * Base structure
@@ -27,7 +33,8 @@ a:hover {
 html,
 body {
     height: 100%;
-    background-color: #ffffff;
+    /*background-color: #04ABE8;*/
+    background-color: #FF9E37;
 }
 
 body {
