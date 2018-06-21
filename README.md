@@ -19,22 +19,60 @@ Pour la Base de Données notre choix est : MySql
 ### Présentation de la Base de données :
 ![Schema Bdd](https://github.com/Baelgar/Laravel_Group_Projet/blob/master/doc/SchemaBdd.png)
 
-### Rapport d’activité Pascal :
+### Rapport d’activité  **Wilfried** :
 #### Première journée :
-__matin :__ Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…
+__matin :__  
 __Après-midi :__
-Poursuite des téléchargements,
-Création du schéma de la base de données,
-Recherche d’information sur les lib d’impression de pdf
+#### Deuxième journée :
+__Matin :__  
+__Après-midi :__
+#### Troisième journée :
+__Matin :__
+__Après-midi :__
+#### Dernière demi-journée :
+
+### Rapport d’activité  **Kevin** :
+#### Première journée :
+__matin :__  Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
+__Après-midi :__ Poursuite des téléchargements,  Création du schéma de la base de données,  
+#### Deuxième journée :
+__Matin :__  Mise en place de la gestion des comptes utilisateurs  
+__Après-midi :__ deploiement de la solution d'authentification Laravel  
+#### Troisième journée :
+__Matin :__ Creation de la liste des réservations  
+__Après-midi :__ Génération pdf des factures.  
+#### Dernière demi-journée :
+Debug de la génération pdf et autre.  
+
+### Rapport d’activité  **Gregory** :
+#### Première journée :
+__matin :__  
+__Après-midi :__
+#### Deuxième journée :
+__Matin :__  
+__Après-midi :__
+#### Troisième journée :
+__Matin :__
+__Après-midi :__
+#### Dernière demi-journée :
+
+
+### Rapport d’activité **Pascal** :
+#### Première journée :
+__matin :__  Etude du cahier des charges, téléchargement des IDE, Outils de développement, Docker et autre…  
+__Après-midi :__
+Poursuite des téléchargements,  
+Création du schéma de la base de données,  
+Recherche d’information sur les lib d’impression de pdf  
 
 #### Deuxième journée :
-__Matin :__ Installation docker, Installation vagrant, pour test projet d’impression pdf.
-__Après-midi :__
-Modification de la base de données (adaptation des tables à notre besoin)
-remplissage de la base de données : users, salles, réservation...
-Mock des pages : search...
+__Matin :__  Installation docker, Installation vagrant, pour test projet d’impression pdf.  
+__Après-midi :__  
+Modification de la base de données (adaptation des tables à notre besoin)   
+remplissage de la base de données : users, salles, réservation...  
+Mock des pages : search...  
 #### Troisième journée :
-__Matin :__ Cours php.
-__Après-midi :__ Prise en main du projet Laravel, analyse de la structure du projet, pour faire des modifications sur la page search.blade.php, tentative d’ajout de css...
+__Matin :__ Cours php.  
+__Après-midi :__ Prise en main du projet Laravel, analyse de la structure du projet, pour faire des modifications sur la page search.blade.php, tentative d’ajout de css...  
 #### Dernière demi-journée :
-Ecriture du readme,
+Ecriture du readme,  préparation de la présentation.  
