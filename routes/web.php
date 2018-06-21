@@ -22,6 +22,9 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index');
 Route::get('/account', 'UserController@index');
+Route::post('/{user}/updateInfos','UserController@updateInfos');
+Route::get('/reservations/rapports','RapportController@index');
+Route::get('/{reservation}/generatePDF','RapportController@generatePDF');
 Route::get('/admin','AdminController@index')->middleware(['auth','admin']);
 Route::get('/user/{user}/delete', 'AdminController@delete')->middleware(['auth','admin']);
 Route::get('/user/{user}/toggleactive', 'AdminController@toggleActive')->middleware(['auth','admin']);
