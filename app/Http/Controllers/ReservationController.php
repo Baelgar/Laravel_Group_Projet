@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
+use App\Reservation;
 use App\Salle;
 use Illuminate\Http\Request;
 
@@ -19,6 +21,28 @@ class ReservationController extends Controller
 
     public function index(Request $request, Salle $salle)
     {
-        return view('layouts.reservation',['salle'=> $salle]);
+//        dd($salle->forfait_id);exit;
+
+        $resa = new Reservation;
+        if ($user = Auth::user()){
+            $resa->user_id = $user->id;
+        }else{
+            $resa->user_id = 2;
+        }
+        $resa->forfait_id = $salle->forfait_id;
+//        $resa->modules_id = $salle->modules_id; Ne fonctionne pas car pas de modules sellectionnable en front
+        $resa->modules_id = 1;
+        $resa->date_debut_location = $request['fromDate'];
+        $resa->date_fin_location = $request['toDate'];
+        $resa->nombre_personnes = $salle->nombrePlace;
+        $resa->prix_total = $salle->prix;
+        $resa->date_creation_reservation = Carbon::today();
+        $resa->setCreatedAt(Carbon::today());
+        $resa->setUpdatedAt(Carbon::today());
+        $resa->save();
+//        dd($resa);exit;
+
+
+        return view('layouts.reservation',['resa'=> $resa, 'salle'=> $salle]);
     }
 }

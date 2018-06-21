@@ -4,24 +4,16 @@
 
 @section('content')
     <div class="container">
+            <div class="jumbotron">
+                <h1>Récapitulatif pour votre reservation</h1>
+                <div class="container">
+                    <p>La salle {{ $salle->name }} situé à {{ $salle->city }} à été réservé pour le prix de {{ $salle->prix }} </p>
+                    <p>Le nombre maimum de personne correspond à {{ $salle->nombrePlace }} </p>
 
-            {{ $salle->id }}
-            {{ $salle->name }}
-            {{ $salle->city }}
-            {{ $salle->prix }}
-            {{ $salle->nombrePlace }}
 
-        <form>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Valider ma réservation</label>
+
+                </div>
             </div>
-            <div class="form-check">
-                <input type="radio" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Revenir à ma recherche</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Valider mon choix</button>
-        </form>
     </div>
 
 @endsection
