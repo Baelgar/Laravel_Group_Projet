@@ -2,21 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Salle;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 
 class SearchController extends Controller
 {
-    public function getData(Request $request)
+    public function getDataLocation(Request $request)
     {
 //        $method = Request::method();
-
-//        if (Request::isMethod('post'))
-//        {
-            dd($request['emplacement']);
-            dd($request['fromDate']);
-            dd($request['toDate']);
-            exit;
-//        }
+        $salles = Salle::where('city',$request['emplacement'])
+            ->orderBy('name', 'desc')
+            ->take(10)
+            ->get();
+        return view('layouts.searchResult',['salles'=> $salles]);
     }
 }
