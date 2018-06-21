@@ -8,7 +8,7 @@
                 <h1>Récapitulatif pour votre reservation</h1>
                 <div class="container">
                     <p>La salle {{ $salle->name }} situé à {{ $salle->city }} à été réservé pour le prix de {{ $salle->prix }} </p>
-                    <p>Le nombre maimum de personne correspond à {{ $salle->nombrePlace }} </p>
+                    <p>Le nombre maximum de personne correspond à {{ $salle->nombrePlace }} </p>
 
 
 
