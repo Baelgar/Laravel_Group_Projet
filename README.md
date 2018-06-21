@@ -17,7 +17,7 @@ Pour la Base de Données notre choix est : MySql
 - Kevin prépare le module d’authentification.
 - Pascal prépare la base de données.
 ### Présentation de la Base de données :
-![Schema Bdd](http://github.com/Baelgar/Laravel_Group_Projet/doc/SchemaBdd.png)
+![Schema Bdd](https://github.com/Baelgar/Laravel_Group_Projet/blob/master/doc/SchemaBdd.png)
 
 ### Rapport d’activité Pascal :
 #### Première journée :
